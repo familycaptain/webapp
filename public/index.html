@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html ng-app='familyCaptain'>
+    <head>
+        <script src='/lib/angular/angular.min.js'></script>
+        <script src='/lib/angular-bootstrap/ui-bootstrap.min.js'></script>
+        <script src='/lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+        <script src='app.js'></script>
+        <script src='/parts/Home/HomeCtrl.js'></script>
+        
+        <link rel='stylesheet' href='lib/bootswatch-dist/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='styles/main.css' />
+    </head>
+    
+    <body>
+        <div class='navbar navbar-default navbar-static-top'>
+        <div class="container">
+            <a href='#/' class='navbar-brand'>Family Captain</a>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='container'>
+            <ui-view></ui-view>
+        </div>
+    </div>
+    </body>
+</html>
