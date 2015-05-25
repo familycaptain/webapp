@@ -8,14 +8,20 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    templateUrl: "/parts/Home/home.html",
-                    controller: "HomeCtrl",
+                    templateUrl: '/parts/Home/home.html',
+                    controller: 'HomeCtrl',
+                }),
+            $stateProvider
+                .state('signup', {
+                    url: '/signup',
+                    templateUrl: '/parts/Signup/signup.html',
+                    controller: 'SignupCtrl'
                 }),
             $stateProvider
                 .state('createFamily', {
                     url: '/createFamily',
-                    templateUrl: "/parts/Family/CreateFamily/createFamily.html",
-                    controller: "CreateFamilyCtrl",
+                    templateUrl: '/parts/Family/CreateFamily/createFamily.html',
+                    controller: 'CreateFamilyCtrl',
                 })
         }]);
 })();

@@ -9,21 +9,25 @@
         <script src='api.js'></script>
         <script src='/parts/Home/HomeCtrl.js'></script>
         <script src='/parts/Family/CreateFamily/CreateFamilyCtrl.js'></script>
+        <script src='/parts/Signup/SignupCtrl.js'></script>
         
-        <link rel='stylesheet' href='lib/bootswatch-dist/css/bootstrap.min.css' />
-        <link rel='stylesheet' href='styles/main.css' />
+        <link rel='stylesheet' href='/lib/bootswatch-dist/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='/styles/main.css' />
     </head>
     
     <body>
-        <div class='navbar navbar-default navbar-static-top'>
-        <div class="container">
-            <a href='#/' class='navbar-brand'>Family Captain</a>
+        <nav class='navbar navbar-default navbar-static-top'>
+            <div class="container">
+                <a href='#/' class='navbar-brand'><i class='glyphicon glyphicon-tasks'></i> Family Captain</a>
+                <ul class='nav navbar-nav' style='float: right'>
+                    <li><a href='#/signup'>Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class='row'>
+            <div class='container'>
+                <ui-view></ui-view>
+            </div>
         </div>
-    </div>
-    <div class='row'>
-        <div class='container'>
-            <ui-view></ui-view>
-        </div>
-    </div>
     </body>
 </html>

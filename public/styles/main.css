@@ -1,0 +1,12 @@
+.light-gray {
+  background-color: #d3d3d3;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
